@@ -1,26 +1,28 @@
 import React from 'react';
+import {AccordionBodyPropsType, AccordionPropsType, AccordionTitlePropsType} from "../Type";
 
-function Accordion() {
+
+export function Accordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
-    return (
-        <>
-            <AccordionTitle/>
-            <AccordionBody/>
-        </>
+    return <div>
+        <AccordionTitle titlle={props.titleValue}/>
+        {!props.collapsed && <AccordionBody/>}
+    </div>
 
-    );
 }
 
-function AccordionTitle() {
+
+function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("title rendering")
-    return <h3>Mеню</h3>
+    return <h3 className={"AccordionTitle"}>{props.titlle}</h3>
 }
-function AccordionBody() {
+
+function AccordionBody(props: AccordionBodyPropsType) {
     console.log("body rendering")
     return <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li>15</li>
+        <li>20</li>
+        <li>35</li>
     </ul>
 }
 

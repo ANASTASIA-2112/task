@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.active {
+  color: gold;
+}
+
+.AccordionTitle {
+  color: darkgoldenrod;
+}
+
+.button{
+  border: 2px solid hotpink;
+  border-radius: 5px ;
+  padding: 20px;
+  background-color: lightblue;
+
+}
+
