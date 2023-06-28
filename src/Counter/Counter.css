@@ -1,0 +1,72 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Poppin, sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.Counter {
+    width: 450px;
+    height: 250px;
+    border: 2px solid deepskyblue;
+    color: deepskyblue;
+    text-align: center;
+    margin-right: 450px;
+
+}
+
+.Counter2 {
+    width: 450px;
+    height: 250px;
+    border: 4px solid deepskyblue;
+    margin-left: 480px;
+    margin-top: -260px;
+
+
+}
+
+
+.input {
+    border: 2px solid deepskyblue;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 5px;
+    outline: none;
+}
+
+
+.active {
+    color: red;
+
+}
+.Max {
+    border-radius: 7px;
+    padding: 25px;
+}
+.Min {
+    margin-top: 55px;
+    border-radius: 7px;
+
+}
+.btn {
+    margin: 10px;
+
+
+}
+
+.Inc {
+    margin: 15px;
+
+}
+.max {
+    padding: 10px;
+}
+.start {
+    padding: 10px;
+}

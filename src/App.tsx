@@ -1,45 +1,39 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import OnnOff from "./components/state";
-import On from "./components/OnOff";
-import {Rating} from "./components/Rating/Rating";
-import Accordion from "./components/Accordion/Accordion";
 
 
 
-// function hello (){
-//     alert("Hello")
-// }
-// hello();
 
-
-
-function App() {
-    console.log("App rendering")
+export function App() {
     return (
         <div className="App">
 
-            <PageTitle title={"This is App component"}/>
-            <PageTitle title={"My star"}/>
-            <img src={"https://www.ar.meirc.com/assets/images/course-image/course/customer-complaint-system-courses.jpg"}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
-            <Accordion titleValue={"Mеню первое!"} collapsed={true}/>
-            <Accordion titleValue={"User"} collapsed={false}/>
-            <OnnOff/>
-            <On on={false}/>
-        </div>
-    );
-}
-
-function PageTitle(props: any) {
-    return <div>
-        <h3>{props.title}</h3>
+                {/*< On OnnOff={OnnOff} onChange={setOnOff}/>*/}
+                {/*<PageTitle title={"This is App component"}/>*/}
+                {/*<PageTitle title={"My star"}/>*/}
+                {/*<img src={"https://www.ar.meirc.com/assets/images/course-image/course/customer-complaint-system-courses.jpg"}/>*/}
+                {/*<Rating value={1} onClick={setRatingValye}/>*/}
+                {/*<Rating value={2} onClick={setRatingValye}/>*/}
+                {/*<Rating value={3} onClick={setRatingValye}/>*/}
+                {/*<Rating value={4} onClick={setRatingValye}/>*/}
+                {/*<Rating value={5} onClick={setRatingValye}/>*/}
+                {/*<Rating value={ratingValue} onClick={setRatingValye}/>*/}
+                {/*<Accordion titleValue={"Menu"}*/}
+                {/*onClick={SetAccordionCollapsed}*/}
+                {/*accordionCollapsed={accordionCollapsed}/>*/}
+                {/*<Accordion2 titleValue={"Menu"}*/}
+                {/*onChange={() => SetAccordionCollapsed(!accordionCollapsed)}*/}
+                {/*accordionCollapsed={accordionCollapsed}/>*/}
+                {/*<Accordion titleValue={"User"}*/}
+                {/*onClick={SetAccordionCollapsed}*/}
+                {/*accordionCollapsed={accordionCollapsed}/>*/}
+                {/*<UnControlledRating/>*/}
+                {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
+                {/*<UncontroledAccordion titleValue={"User"}/>*/}
+                {/*<OnOff onChange={setOn}/>{setOn.toString()}/>*/}
     </div>
-}
 
 
+        );
+    }
 export default App;
