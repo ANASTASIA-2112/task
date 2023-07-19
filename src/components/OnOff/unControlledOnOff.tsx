@@ -10,7 +10,7 @@ export type OnOffPropsType = {
 }
 //есть в сторибук
 
-export function On (props: OnOffPropsType) {
+export function UncntrolledOff (props: OnOffPropsType) {
     let [on,setOn]=useState(props.defaultOn ? props.defaultOn:false)
 
     let onStyle = {

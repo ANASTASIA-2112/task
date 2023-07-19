@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Accordiion.css';
 
 export type AccordionPropsType = {
     titleValue: string
@@ -10,8 +10,8 @@ export type AccordionPropsType = {
 
 export function Accordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
-    return <div>
-        <AccordionTitle  title={props.titleValue} onClick={props.onClick}  accordionCollapsed={!props.accordionCollapsed }/>
+    return <div className={"accordion"}>
+        <AccordionTitle title={props.titleValue} onClick={props.onClick}  accordionCollapsed={!props.accordionCollapsed }/>
         {!props.accordionCollapsed && <AccordionBody/>}
     </div>
 
