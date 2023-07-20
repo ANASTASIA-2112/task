@@ -20,7 +20,7 @@ export function UncntrolledOff (props: OnOffPropsType) {
         display: "inline-block",
         marginLeft: "5px",
         padding: "2px",
-        background: props.defaultOn ? "green" : "white"
+        background: on ? "green" : "white"
     };
 
     let offStyle = {
@@ -30,7 +30,7 @@ export function UncntrolledOff (props: OnOffPropsType) {
         display: "inline-block",
         marginLeft: "5px",
         padding: "2px",
-        background: props.defaultOn? "white" : "red"
+        background: on ? "white" : "red"
     };
     let indecatorStyle = {
         width: "10px",
@@ -39,14 +39,21 @@ export function UncntrolledOff (props: OnOffPropsType) {
         border: "1px solid black",
         display: "inline-block",
         marginLeft: "5px",
-        background: props.defaultOn? "green" : "red"
+        background: on ?"green" : "red"
 
     };
-
+    const onClickFalse =()=> {
+        {setOn(true)
+            props.onChange(true)}
+    }
+    const offClickTrue =()=> {
+        {setOn(false)
+            props.onChange(false)}
+    }
     return (
         <div>
-            <div style={onStyle} onClick={()=> {props.onChange(true)}}>On</div>
-            <div style={offStyle} onClick={()=> {props.onChange(false)}}>Off</div>
+            <div style={onStyle} onClick={ onClickFalse }>On</div>
+            <div style={offStyle} onClick={ offClickTrue}>Off</div>
             <div style={indecatorStyle}></div>
         </div>
     );
